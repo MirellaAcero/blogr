@@ -1,0 +1,654 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Overpass", serif;
+  color: hsl(208, 49%, 24%);
+}
+
+[class^=col-], [class*=" col-"] {
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  margin-right: 0;
+}
+
+header {
+  height: 100%;
+  background-color: hsl(13, 100%, 72%);
+  background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  border-bottom-left-radius: 18%;
+}
+header .active {
+  background-color: hsl(0, 0%, 100%);
+  padding: 12px 32px;
+  border-radius: 30px;
+  color: hsl(356, 100%, 66%) !important;
+  font-weight: 700;
+}
+header .active:hover {
+  background: rgba(255, 255, 255, 0.368627451);
+  color: hsl(0, 0%, 100%) !important;
+}
+header .back-second-header {
+  background-image: url(images/bg-pattern-intro-desktop.svg);
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-size: 2848px;
+  background-position-y: -1261px;
+  background-position-x: -348px;
+}
+header .text {
+  text-align: center;
+  margin-top: 70px;
+}
+header .text .active {
+  padding: 13px 20px;
+  text-decoration: none;
+  margin-right: 20px;
+  border: none;
+}
+header .text .active:hover {
+  background: rgba(255, 255, 255, 0.368627451);
+  color: hsl(0, 0%, 100%) !important;
+}
+header .text a {
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 30px;
+  padding: 13px 30px;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-weight: 700;
+}
+header .text a:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(356, 100%, 66%) !important;
+}
+header h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 55px;
+  font-family: "Ubuntu", serif;
+}
+header p {
+  color: hsl(0, 0%, 100%);
+  font-weight: 200;
+  margin-top: 22px;
+  padding-bottom: 55px;
+  margin-bottom: 0;
+}
+
+nav {
+  padding: 40px 0;
+}
+nav a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+nav .menu-left a:hover {
+  text-decoration: underline;
+}
+
+.menu-principal {
+  display: flex;
+  justify-content: space-around;
+}
+
+li.menu-left, .menu-right {
+  display: flex;
+}
+
+ul.left-option, .right-option {
+  display: flex;
+  list-style: none;
+}
+
+.menu-left a:hover .arrow {
+  cursor: pointer;
+  transform: scaleY(-1);
+}
+
+.left-option li {
+  padding: 0 30px;
+}
+
+.right-option li {
+  padding: 0 30px;
+}
+
+.menu-vertical {
+  position: absolute;
+  display: none;
+  padding: 0;
+  border-radius: 10px;
+  list-style: none;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.left-option li:hover .menu-vertical {
+  display: block;
+}
+
+.menu-vertical li {
+  padding: 0;
+}
+
+.menu-vertical li a:hover {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.menu-vertical li a {
+  display: block;
+  text-decoration: none;
+  color: hsl(237, 23%, 32%);
+  padding: 10px 17px;
+  width: 150px;
+  text-align: left;
+}
+
+#check {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+.container {
+  padding: 0;
+  max-width: 100%;
+}
+
+.design {
+  background-image: url(images/illustration-editor-desktop.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 840px;
+  background-position-y: 55px;
+  background-position-x: 800px;
+}
+.design h2 {
+  padding: 6.5rem 0;
+  text-align: center;
+}
+.design h4 {
+  margin-bottom: 25px;
+}
+.design .text {
+  margin-bottom: 75px;
+  padding-left: 130px;
+}
+.design .text:nth-child(2) {
+  margin-bottom: 210px;
+}
+.design p {
+  color: hsl(240, 2%, 79%);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.body-phone {
+  background: linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  width: 100%;
+  height: 400px;
+  border-top-right-radius: 120px;
+  border-bottom-left-radius: 120px;
+}
+.body-phone .sub-body {
+  background-image: url(images/bg-pattern-circles.svg);
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: 984px;
+  background-position-x: -206px;
+  background-position-y: -480px;
+}
+.body-phone .phone {
+  position: relative;
+  top: -70px;
+  padding-left: 95px;
+}
+.body-phone .text {
+  color: hsl(0, 0%, 100%);
+  padding-top: 120px;
+  padding-right: 148px;
+}
+.body-phone h4 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.body-phone p {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.laptop {
+  background-image: url(images/illustration-laptop-desktop.svg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 950px;
+  background-position-x: -268px;
+  background-position-y: 100px;
+}
+.laptop .texto {
+  padding: 250px 0;
+}
+.laptop .text {
+  padding-right: 132px;
+  margin-bottom: 75px;
+}
+.laptop .text:nth-child(2) {
+  margin-bottom: 0;
+}
+.laptop h4 {
+  margin-bottom: 25px;
+}
+.laptop p {
+  color: hsl(240, 2%, 79%);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+footer {
+  background-color: hsl(240, 10%, 16%);
+  border-top-right-radius: 120px;
+  padding: 70px 80px 60px 147px;
+  color: hsl(0, 0%, 100%);
+}
+footer .footer-text h5 {
+  margin-bottom: 35px;
+}
+footer .footer-text a {
+  color: white;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 13px;
+}
+footer .footer-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1120px) {
+  .body-phone .phone {
+    position: relative;
+    top: -70px;
+    padding-left: 25px;
+  }
+  .body-phone .text {
+    padding: 80px 45px 0 100px;
+  }
+  .design {
+    background-position-x: 560px;
+  }
+  .laptop .text {
+    padding: 0 50px 0 146px;
+  }
+}
+@media (max-width: 920px) {
+  .menu-desktop {
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
+    padding: 45px 30px;
+  }
+  .mobile {
+    display: block;
+  }
+  header {
+    height: 100%;
+  }
+  header .back-second-header {
+    padding-bottom: 150px;
+  }
+  header .text {
+    padding: 0;
+    margin-top: 18px;
+  }
+  header h1 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .design {
+    background-image: none;
+  }
+  .design h2 {
+    padding: 68px 0 35px 0;
+    font-size: 33px;
+  }
+  .design .text {
+    margin-bottom: 40px;
+    padding: 15px 35px 0 55px;
+    text-align: center;
+  }
+  .design .text:nth-child(2) {
+    margin-bottom: 380px;
+  }
+  .design h4 {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+  .design .mobile {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .design .mobile img {
+    width: 90%;
+  }
+  .design p {
+    font-size: 19px;
+    line-height: 1.6;
+  }
+  .body-phone {
+    height: 100%;
+  }
+  .body-phone .sub-body {
+    height: 100%;
+    background-size: 662px;
+    background-position-x: -200px;
+    background-position-y: -309px;
+  }
+  .body-phone .phone {
+    position: relative;
+    top: -210px;
+    padding-left: 0;
+  }
+  .body-phone .phone img {
+    width: 100%;
+  }
+  .body-phone .texto {
+    padding: 0 59px;
+    position: relative;
+    top: -122px;
+    text-align: center;
+  }
+  .body-phone .text {
+    padding: 0;
+  }
+  .laptop {
+    background-image: none;
+  }
+  .laptop img {
+    width: 100%;
+  }
+  .laptop .mobile {
+    margin: 70px 0;
+  }
+  .laptop .texto {
+    padding: 0;
+  }
+  .laptop .text {
+    padding: 0 46px 0 60px;
+    text-align: center;
+  }
+  .laptop .text:nth-child(2) {
+    margin-bottom: 90px;
+  }
+  footer {
+    padding: 90px;
+    text-align: center;
+  }
+  footer .logo {
+    margin-bottom: 100px;
+  }
+  footer .footer-text {
+    margin-bottom: 65px;
+  }
+}
+@media (max-width: 920px) {
+  li {
+    list-style: none;
+    padding: 16px 30px;
+  }
+  li:nth-child(4) {
+    border-top: 1px hsl(240, 2%, 79%) solid;
+    margin: 0 30px;
+    margin-top: 17px;
+  }
+  .checkbtn {
+    font-size: 30px;
+    color: hsl(0, 0%, 100%);
+    float: right;
+    cursor: pointer;
+    display: block;
+  }
+  nav {
+    padding: 0;
+  }
+  nav .menu-principal-mobile {
+    position: fixed;
+    width: 80%;
+    background: hsl(0, 0%, 100%);
+    margin: auto;
+    top: 80px;
+    left: 100%;
+    right: 0;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 1;
+    margin-top: 20px;
+    padding: 20px 10px 30px !important;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  }
+  nav ul {
+    padding: 0;
+  }
+  nav a {
+    color: hsl(237, 23%, 32%);
+  }
+  nav .active {
+    padding: 12px 32px;
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  }
+  summary {
+    list-style: none;
+    color: hsl(237, 23%, 32%);
+  }
+  summary::before {
+    content: url(images/icon-arrow-dark.svg);
+    padding-right: 10px;
+  }
+  details[open] summary::before {
+    content: url(images/icon-arrow-up-dark.svg);
+  }
+  .list-menu {
+    background-color: hsl(240, 2%, 79%);
+    opacity: 0.7;
+    line-height: 3rem;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .list-menu li {
+    padding: 0;
+  }
+  #check:checked ~ ul {
+    left: 0;
+    padding: 0;
+  }
+  #clickWrapper {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+  }
+  /* menu start */
+  .menu {
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    width: 40px;
+    height: 2px;
+    margin-top: 12px;
+  }
+  .animate.menu {
+    animation-name: menu-menu;
+    animation-duration: 0.3s;
+  }
+  @keyframes menu-menu {
+    0% {
+      width: 0px;
+      height: 0px;
+    }
+    50% {
+      width: 0px;
+      height: 0px;
+    }
+    51% {
+      position: absolute;
+      background-color: hsl(0, 0%, 100%);
+      width: 40px;
+      height: 2px;
+    }
+  }
+  .menu:after {
+    content: "";
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    width: 40px;
+    height: 2px;
+    margin-top: -12px;
+  }
+  .animate.menu:after {
+    animation-name: menu-after;
+    animation-duration: 0.3s;
+  }
+  @keyframes menu-after {
+    0% {
+      transform: rotate(-45deg);
+      margin-top: 0px;
+    }
+    50% {
+      transform: rotate(0deg);
+      margin-top: 0px;
+    }
+    100% {
+      transform: rotate(0deg);
+      margin-top: -15px;
+    }
+  }
+  .menu:before {
+    content: "";
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    width: 40px;
+    height: 2px;
+    margin-top: 12px;
+  }
+  .animate.menu:before {
+    animation-name: menu-before;
+    animation-duration: 0.3s;
+  }
+  @keyframes menu-before {
+    0% {
+      transform: rotate(45deg);
+      margin-top: 0px;
+    }
+    50% {
+      transform: rotate(0deg);
+      margin-top: 0px;
+    }
+    100% {
+      transform: rotate(0deg);
+      margin-top: 15px;
+    }
+  }
+  /* menu end */
+  /* close start */
+  .close {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+  .close.animate {
+    animation-name: close-close;
+    animation-duration: 0.3s;
+  }
+  @keyframes close-close {
+    0% {
+      position: absolute;
+      background-color: hsl(0, 0%, 100%);
+      width: 40px;
+      height: 2px;
+      margin-top: 15px;
+    }
+    50% {
+      display: none;
+      width: 40px;
+      height: 5px;
+    }
+    100% {
+      width: 0px;
+      height: 0px;
+    }
+  }
+  .close:after {
+    content: "";
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    width: 40px;
+    height: 2px;
+    transform: rotate(45deg);
+  }
+  .animate.close:after {
+    animation-name: close-after;
+    animation-duration: 0.3s;
+  }
+  @keyframes close-after {
+    0% {
+      transform: rotate(0deg);
+      margin-top: 15px;
+    }
+    50% {
+      transform: rotate(0deg);
+      margin-top: 0px;
+    }
+    100% {
+      transform: rotate(45deg);
+    }
+  }
+  .close:before {
+    content: "";
+    position: absolute;
+    background-color: hsl(0, 0%, 100%);
+    width: 40px;
+    height: 2px;
+    transform: rotate(-45deg);
+  }
+  .animate.close:before {
+    animation-name: close-before;
+    animation-duration: 0.3s;
+  }
+  @keyframes close-before {
+    0% {
+      transform: rotate(0deg);
+      margin-top: -15px;
+    }
+    50% {
+      transform: rotate(0deg);
+      margin-top: 0px;
+    }
+    100% {
+      transform: rotate(-45deg);
+    }
+  }
+  /* close end */
+}
+
+/*# sourceMappingURL=style.css.map */
