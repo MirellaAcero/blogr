@@ -19,7 +19,10 @@ body {
 .row {
   margin-right: 0;
 }
-
+details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
+details > summary::-webkit-details-marker /* Safari */ {
+  display: none;
+}
 header {
   height: 100%;
   background-color: hsl(13, 100%, 72%);
